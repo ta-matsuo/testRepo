@@ -1,0 +1,15 @@
+conf:
+  timeout: 10
+
+exec_list:
+  - expect: 'assword:'
+    exec: '{{ __loginpassword__ }}'
+  - expect: '{{ __loginuser__ }}@'
+    exec: echo {{ TPF_pioneer }}
+  - expect: '{{ __loginuser__ }}@'
+    exec: echo {{ CPF_pioneer }}
+  - expect: '{{ __loginuser__ }}@'
+    exec: echo {{ GBL_pioneer }}
+  - expect: '{{ __loginuser__ }}@'
+    exec: exit
+    
