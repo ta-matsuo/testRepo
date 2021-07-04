@@ -2,3 +2,5 @@
 - command: echo {{ CPF_legacy }}
 - command: echo {{ GBL_legacy }}     
 - command: echo {{ VAR_legacy }}     
+      
+          
